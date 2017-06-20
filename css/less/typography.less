@@ -1,0 +1,129 @@
+/**************************************************************************************/
+/**@FONT FACE**/
+/**************************************************************************************/
+
+
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('../Font/IcoMoon-Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'IcoMoon-Free';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    }
+.icon-icon-arrow-right, .icon-facebook, .icon-twitter, .icon-youtube{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon-Free' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga";
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}   
+
+.icon-arrow-right:before {
+    content: "\ea34";
+}
+
+
+
+
+/**************************************************************************************/
+/**GENERAL TYPOGRAPY STYLE**/
+/**************************************************************************************/
+
+
+body{
+	  color: @regular-text;
+	  font:  300 16px/24px "Source Sans Pro", Helvetica, Arial, Sans-serif;
+	  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3{
+	font-family: "Bitter", Georgia, serif;
+	margin-bottom: 1.5em;
+}
+
+h1{
+	font-size: 26px;
+	line-height: 1.4em;
+}
+
+h2{
+	font-size: 18px;
+	line-height: 1.2em;
+}
+
+h3{
+	font-size: 14px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+em{
+	font-size: 14px;
+	font-style: italic; 
+	color:  @light-text;
+}
+
+
+p a{
+    
+    color: @primary;
+    text-decoration: none;
+    .transition();
+
+     &:hover{
+             border-bottom: 1px dotted; 
+             color: @regular-text;
+
+
+     }
+
+        }
+
+
+
+

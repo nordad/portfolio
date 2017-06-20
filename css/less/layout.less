@@ -1,0 +1,396 @@
+/**************************************************************************************/
+/*GENERAL*/
+/**************************************************************************************/
+
+
+.section-content{
+	padding: 3em 0;
+
+}
+
+ul.row{
+	margin-bottom: 1.5em;
+}
+
+.no-padding-bottom{
+	padding-bottom: 0;
+}
+
+
+.no-margin{
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************************************/
+/**HEADER**/
+/**************************************************************************************/
+
+
+.main-header{
+	background: transparent url("../images/stock/ui2.png") 0 0  repeat-x;
+}
+
+.main-nav{
+
+	ul{
+		margin-top: 3em;
+		
+		li{
+			text-transform: uppercase;
+
+			a{
+				color: @light-text;
+				text-decoration: none;
+				
+				.transition(); 
+
+				&:hover{
+					color:  @primary;
+				}
+
+			}
+		}
+	}
+
+}
+
+/**************************************************************************************/
+/**middle-container**/
+/**************************************************************************************/
+
+.middle-container{
+	background: transparent url("../images/stock/bgpattern.png") 0 0 repeat;
+	.inner-shadow();
+	
+}
+
+.intro-content{
+	background-color: @dark-bg;
+	color: white;
+	height: 209px;
+	padding: 0 3em;
+
+	h1{
+		padding-top: 90px;
+
+
+
+	}
+
+	.intro-color-2{
+
+		padding-top: 75px;
+	}
+
+
+
+	
+}
+
+.portfolio-entry{
+
+	position: relative;
+	
+
+
+	.hover-state{
+		height: 227px;
+		
+		left:0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		
+		width: 100%;
+		padding: 5.5em 75px;
+		display: none; 
+		background-color: @dark-bg;
+		color: white;
+		p.move{
+			position: relative;
+			text-align: center;
+			font-size: 14px;
+
+			&:before {
+				content: '\ea34';
+				color: @primary;
+				position: absolute;
+				font-family: "IcoMoon-Free";
+				font-size: 11px;
+				top: 75px;
+				right: -25px;
+			}
+			
+		} 
+
+
+		p{
+			position: relative;
+			text-align: center;
+			font-size: 14px;
+
+			&:before {
+				content: '\ea34';
+				color: @primary;
+				position: absolute;
+				font-family: "IcoMoon-Free";
+				font-size: 11px;
+				top: 50px;
+				right: -25px;
+			}
+			
+		} 
+
+
+	}
+
+
+	&:hover figure img{
+		opacity: 0;
+		filter: alpha(opacity=0);
+	} 
+
+	&:hover .hover-state{
+		display: block;
+		
+	} 
+
+	figure img{
+		.transition(opacity, 1s);
+	}
+
+
+
+
+
+}
+
+.row-2{
+	margin-bottom: 1.5em;
+}
+
+
+
+/**************************************************************************************/
+/**PORTFOLIO**/
+/**************************************************************************************/
+
+
+
+.portfolio-header{
+
+	margin: 1.5em auto;
+
+
+}
+
+.portfolio-nav{
+	padding: 1.5em 0;
+	margin-top: 1.5em;
+
+}
+
+
+
+.portfolio-image-list{
+	margin-bottom: 1.5em;
+}
+
+
+
+.portfolio-image-list,{
+
+	margin-bottom: 0;
+
+	li{
+
+		margin-bottom: 1.5em;
+		
+		&:last-child{
+			margin-bottom: 0;}
+		}
+
+		
+		
+		
+
+		figcaption{
+			text-align: center;
+			font-size: 14px;
+			margin: 1.5em;  
+		}
+	}
+
+	.hidden{
+		  opacity: .2;
+		  filter: alpha(opacity=20);
+	}
+
+
+
+
+	/**************************************************************************************/
+	/**SIDEBAR**/
+	/**************************************************************************************/
+
+
+	.sidebar{
+		padding: 3em 1.5em;
+
+
+		blockquote{
+			font-weight: italic;
+
+			p:before, p:after{
+				content: '"';
+			}
+		}
+
+		.cite{
+			text-transform: uppercase;
+			font-size: 14px;
+
+		}
+		
+		p{
+			margin-bottom: 1.5em;
+			color: @light-text;
+			
+		}
+	}
+
+
+
+	/**************************************************************************************/
+	/**ABOUT**/
+	/**************************************************************************************/
+
+
+
+	.about-1p{
+		margin-bottom: 1em;
+
+	}
+
+	.about-2p{
+		margin-bottom: 35px;
+		width: 5%;
+		
+		
+	}
+	.about-p{
+		width: 40%;
+		margin-right: auto;
+		margin-left: auto;
+		line-height: 1.8em;
+		color: @light-text;
+
+	}
+
+
+
+
+	/**************************************************************************************/
+	/**CONTACT**/
+	/**************************************************************************************/
+
+	.contact-p{
+		margin-bottom: 1.5em;
+	}
+
+	.contact-social-icon{
+		margin: 1.5em auto;
+
+	}
+
+	.contact-page, .page-hr{
+		margin-top: 3em auto;
+	}
+
+
+
+
+
+
+
+
+
+	/**************************************************************************************/
+	/**QUOTE AREA**/
+	/**************************************************************************************/
+
+	.quote-container{
+
+		background-color: @dark-bg;
+
+
+
+		h3{
+			color: white;
+			text-transform: uppercase;
+			padding-top: 1.5em;
+
+
+		}
+		
+		p{
+			
+			color: @dark-bg-text;
+			.narrow-p();
+			
+
+		}
+
+		a:hover{
+
+			color: white;
+		}
+
+
+	}
+
+	/**************************************************************************************/
+	/**FOOTER**/
+	/**************************************************************************************/
+
+
+	.main-footer{
+		
+		p{
+			color: @light-text;
+			.narrow-p();
+		}
+	}
+
+	.social-icon{
+		li a{
+			color: @border;
+			font-size: 32px;
+			display: inline-block;
+			text-decoration: none;
+			.transition();
+
+			&:hover{
+				color: @dark-bg;
+			}
+		}
+	}
+
+
+
+
+
+
+

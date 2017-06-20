@@ -1,0 +1,180 @@
+/**************************************************************************************/
+/**  UI ELEMENT STYLES**/
+/**************************************************************************************/
+
+hr{
+	background-color:  @border;
+	background-image:  -moz-linear-gradient(left, white 0%, @border 50%, white 100%);
+	background-image:  -webkit-linear-gradient(left, white 0%, @border 50%, white 100%);
+	background-image:  -o-gradient(left, white 0%, @border 50%, white 100%);
+	background-image:  linear-gradient(left, white 0%, @border 50%, white 100%);
+
+	border: none;
+	height: 1px;
+	width: 50%;
+	margin: 1.5em auto;
+
+	&.no-margin{
+		margin: 0 auto;
+	}
+
+}
+
+.page-hr{
+	margin: 3em auto;
+}
+
+.box{
+
+	background-color: white;
+	padding: 3px;
+	border: 1px solid @border;
+
+	.drop-shadow();
+
+	figure img{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.btn{
+	background-color: @light-bg;
+	color: @dark-bg;
+	height: 32px;
+	padding: 3px 16px;
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: none;
+
+
+	.round();
+	.transition(background-color, .4s);
+
+	&:hover{
+
+		background-color: @dark-bg;
+		color: white;
+	}
+
+	&:active{
+		background-color: lighten(@dark-bg, 20%);
+	}
+
+	&.active{
+		background-color: white;
+		font-weight: bold;
+		
+		&:hover{
+			color: inherit;
+		}  
+	}
+
+	
+
+}
+
+.btn-primary{
+	background-color: @primary;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	height: 48px;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	
+
+	.inner-shadow(0,-3px, 0, 0, .2);
+
+	&:hover{
+		background-color: lighten(@primary, 3%);
+
+	}
+
+	&:active{
+		box-shadow: none;
+		height: 45px;
+		margin-top: 3px;
+	}    
+}
+
+
+.quote-form{
+
+	width: 470px;
+	margin: auto;
+
+	p{
+		background-color: @light-bg;
+		margin-bottom: 12px;
+		text-align: left;
+		padding: 3px 3px 3px 16px;
+		overflow: hidden;
+
+		&:hover{
+			background-color: darken(@light-bg, 2%);    
+		}
+	}
+
+	label{
+		margin-top: 16px;
+		display: inline-block; 
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	textarea{
+		border: none;
+		font: 300 16px/24px "Source Sans Pro" Helvetica, Arial sans-serif;
+		height: 52px;
+		margin-left: 16px;
+		padding: 0 16px;
+		width: 300px;
+		float: right;
+
+	}
+
+	p.textarea textarea{
+		height: 200px;
+		padding: 16px;
+	}
+
+	input[type="submit"]{
+		border: none;
+		cursor: pointer;
+		font: bold 16px/24px "Source Sans Pro" Helvetica, Arial sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+
+
+
+}
+
+.contact-page-add-margin-bottom{
+	margin-bottom: 1.5em;
+}
+
+.blockquote{
+
+}
+
+.select-container{
+	height: 60px;
+
+	select{
+		font-size: 16px;
+		float: right;
+		width: 300px;
+		margin: 16px 0 16px 16px;
+	}
+
+}
+
+
+
+
+
+
+
